@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Tradecopia - Connection Success</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="shortcut icon" href="../images/favicon.ico">
+  <!-- <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="/css/icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="/css/app.min.css" rel="stylesheet" type="text/css" /> -->
+
+  <style type="text/css">
+    :root {
+      --bg-dark: #0f0f0f;
+      --text-white: #ffffff;
+      --text-gray: #808080;
+      --primary-color: #6c5ce7;
+      --primary-hover: rgb(255, 215, 0);
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .success-container {
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .success-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+    }
+
+    .success-form-container {
+      width: 100%;
+      max-width: 500px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+
+    .success-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-white);
+      text-align: center;
+    }
+
+    .success-subtitle {
+      color: var(--text-gray);
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .close-btn {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.75rem 1rem;
+      border-radius: 5px;
+      font-size: 0.95rem;
+      transition: background-color 0.2s ease;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .close-btn:hover {
+      background-color: var(--primary-hover);
+      color: var(--bg-dark);
+      text-decoration: none;
+    }
+
+    .success-icon {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(108, 92, 231, 0.2);
+      color: var(--primary-color);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #4cb115;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      position: relative;
+    }
+
+    .status-dot::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: rgba(76, 177, 21, 0.6);
+      animation: pulse 2s ease-in-out infinite;
+      z-index: -1;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.7;
+      }
+      70% {
+        transform: scale(2.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    .divider {
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 1.5rem 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mb-3 {
+      margin-bottom: 1rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 1.5rem;
+    }
+
+    .me-2 {
+      margin-right: 0.5rem;
+    }
+
+    .ms-1 {
+      margin-left: 0.25rem;
+    }
+
+    .w-100 {
+      width: 100%;
+    }
+
+    @media (max-width: 576px) {
+      .success-form-container {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="success-container">
+  <div class="success-content">
+    <div class="text-center mb-4">
+      <img src="/images/logo-purple-white.svg" alt="Tradecopia" class="mb-3" width="200">
+      <h1 class="success-title">connection successful</h1>
+      <p class="success-subtitle">
+        Your Tradovate/Ninjatrader account has been linked with Tradecopia
+      </p>
+    </div>
+
+    <div class="success-form-container">
+      <div class="text-center">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Connected Successfully</span>
+        </div>
+
+        <p class="text-center" style="color: var(--text-gray);">
+          You have successfully authenticated your Tradovate/Ninjatrader account with Tradecopia.
+          You can now close this page and return to the application.
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="mb-4" style="color: var(--text-gray); font-size: 0.9rem;">
+          <i class="fa-solid fa-circle-info me-2"></i>
+          All account data will be synchronized automatically
+        </p>
+
+        <div style="display: flex; justify-content: center;">
+          <a href="#" onclick="window.close();" class="close-btn" style="display: block; width: 200px;">
+            close and return <span class="ms-1">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
